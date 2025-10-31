@@ -1,0 +1,8 @@
+node_modules/
+*.log
+.env
+.env.*
+shopify.theme.toml
+assets/theme.css
+.DS_Store
+.vscode/
