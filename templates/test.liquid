@@ -1,0 +1,20 @@
+{% layout none %}
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    {{ 'theme.css' | asset_url | stylesheet_tag }}
+    <title>Tailwind Test</title>
+  </head>
+  <body class="bg-gray-50 text-center p-10">
+    <h1 class="text-3xl font-bold text-indigo-600 mb-6">
+      Tailwind Test Page 🎨
+    </h1>
+    <div class="bg-white shadow-lg rounded-xl p-6 max-w-md mx-auto">
+      <p class="text-gray-700 mb-4">This is a Tailwind sandbox!</p>
+      <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition">
+        Click Me
+      </button>
+    </div>
+  </body>
+</html>
