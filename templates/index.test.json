@@ -1,9 +1,0 @@
-{
-  "sections": {
-    "main": {
-      "type": "main-test",
-      "settings": {}
-    }
-  },
-  "order": ["main"]
-}

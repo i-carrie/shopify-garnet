@@ -1,0 +1,9 @@
+{
+  "name": "Test page",
+  "layout": "theme.test",
+  "sections": {
+    "main": { "type": "main-test" }
+  },
+  "order": ["main"]
+}
+
