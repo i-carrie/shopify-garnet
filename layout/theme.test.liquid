@@ -3,15 +3,26 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ page_title }}</title>
+    <link rel="canonical" href="{{ canonical_url }}">
+    <meta name="description" content="{{ page_description | escape }}">
+
     {{ content_for_header }}
+
     {{ 'tailwind.css' | asset_url | stylesheet_tag }}
+
+    <!-- Alpine.js（クリックでドロップダウン開閉用） -->
+    <script defer src="https://unpkg.com/alpinejs@3.13.5/dist/cdn.min.js"></script>
   </head>
+
   <body>
-  {% section 'header-test' %}
+    {% section 'header-test' %}
+
     <main id="MainContent" role="main">
       {{ content_for_layout }}
     </main>
+
+    {% section 'footer' %}
   </body>
 </html>
-
-
